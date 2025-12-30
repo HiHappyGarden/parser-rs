@@ -1,8 +1,8 @@
 //! Example using the AtParser with proper type handling
 
-use parser_rs::context::AtContext;
-use parser_rs::parser::AtParser;
-use parser_rs::{Args, AtError, AtResult};
+use at_parser_rs::context::AtContext;
+use at_parser_rs::parser::AtParser;
+use at_parser_rs::{Args, AtError, AtResult};
 
 /// Simple command module for testing
 pub struct TestCommand {

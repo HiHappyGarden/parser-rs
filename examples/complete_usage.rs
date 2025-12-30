@@ -1,7 +1,7 @@
 //! Complete example demonstrating the AT command parser functionality
 
-use parser_rs::context::AtContext;
-use parser_rs::{Args, AtError, AtResult};
+use at_parser_rs::context::AtContext;
+use at_parser_rs::{Args, AtError, AtResult};
 
 /// Echo command module - manages echo state
 pub struct EchoModule {
@@ -78,7 +78,7 @@ impl AtContext for InfoModule {
 
     /// Query: return detailed info
     fn query(&mut self) -> AtResult<'static> {
-        Ok("Parser-RS v1.0.0 - AT Command Parser Library")
+        Ok("AT-Parser-RS v1.0.0 - AT Command Parser Library")
     }
 }
 

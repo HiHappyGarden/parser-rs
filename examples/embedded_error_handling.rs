@@ -3,9 +3,9 @@
 
 #![allow(dead_code)]
 
-extern crate parser_rs;
+extern crate at_parser_rs;
 
-use parser_rs::{Args, AtError};
+use at_parser_rs::{Args, AtError};
 
 // Example macro to register commands (mock, since AtContext is missing)
 macro_rules! dummy_at_modules {

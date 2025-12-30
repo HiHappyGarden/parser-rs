@@ -3,10 +3,10 @@
 
 #![allow(dead_code)]
 
-extern crate parser_rs;
+extern crate at_parser_rs;
 
-use parser_rs::{Args, AtError, AtResult};
-use parser_rs::context::AtContext;
+use at_parser_rs::{Args, AtError, AtResult};
+use at_parser_rs::context::AtContext;
 
 // UART struct with AtContext implementation for UARTSEND command
 struct DummyUart {

@@ -1,10 +1,10 @@
-# Parser-RS
+# AT-Parser-RS
 
 A lightweight, `no_std` AT command parser library for embedded Rust applications.
 
 ## Overview
 
-Parser-RS provides a flexible framework for implementing AT command interfaces in embedded systems. It supports the standard AT command syntax including execution, query, test, and set operations.
+AT-Parser-RS provides a flexible framework for implementing AT command interfaces in embedded systems. It supports the standard AT command syntax including execution, query, test, and set operations.
 
 ## Features
 
@@ -78,8 +78,8 @@ impl<'a> Args<'a> {
 Implement the `AtContext` trait for your command handlers:
 
 ```rust
-use parser_rs::context::AtContext;
-use parser_rs::{AtResult, AtError, Args};
+use at_parser_rs::context::AtContext;
+use at_parser_rs::{AtResult, AtError, Args};
 
 /// Echo command - returns/sets echo state
 pub struct EchoModule {
@@ -160,7 +160,7 @@ static mut RESET: ResetModule = ResetModule;
 ### 3. Initialize Parser and Register Commands
 
 ```rust
-use parser_rs::parser::AtParser;
+use at_parser_rs::parser::AtParser;
 
 let mut parser = AtParser::new();
 

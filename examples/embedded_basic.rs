@@ -3,9 +3,9 @@
 
 #![allow(dead_code)]
 
-extern crate parser_rs;
+extern crate at_parser_rs;
 
-use parser_rs::{Args, AtError, AtResult};
+use at_parser_rs::{Args, AtError, AtResult};
 
 // Example function using Args in no_std
 fn parse_args_example() -> AtResult<'static> {
