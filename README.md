@@ -317,16 +317,25 @@ static MODULE: Mutex<RefCell<MyModule>> = Mutex::new(RefCell::new(MyModule::new(
 
 The library includes several example files demonstrating different usage patterns:
 
-- **`main_example.rs`** - Complete demonstration with multiple command types (Echo, Reset, Info, LED)
-- **`parser_example.rs`** - Shows direct usage of the `AtParser` with comprehensive tests
-- **`no_std_basic.rs`** - Basic patterns for no_std/embedded environments
-- **`no_std_advanced.rs`** - Advanced patterns with custom error handling
-- **`no_std_uart_device.rs`** - UART and device configuration example
+### Standard Examples
+- **`complete_usage.rs`** - Complete demonstration with multiple command types (Echo, Reset, Info, LED)
+- **`basic_parser.rs`** - Shows direct usage of the `AtParser` with comprehensive test cases
+
+### Embedded/no_std Examples
+- **`embedded_basic.rs`** - Basic patterns and error handling for no_std/embedded environments
+- **`embedded_error_handling.rs`** - Advanced patterns with custom error handling and macros
+- **`embedded_uart_config.rs`** - UART and device configuration with AtContext implementation
 
 Run examples with:
 ```bash
-cargo run --example main_example --no-default-features
-cargo run --example parser_example --no-default-features
+# Standard examples
+cargo run --example complete_usage
+cargo run --example basic_parser
+
+# Embedded examples (no_std)
+cargo run --example embedded_basic --no-default-features
+cargo run --example embedded_error_handling --no-default-features
+cargo run --example embedded_uart_config --no-default-features
 ```
 
 ## License
