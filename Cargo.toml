@@ -3,9 +3,14 @@ name = "at-parser-rs"
 version = "0.1.0"
 edition = "2024"
 authors = ["Antonio Salsi <passy.linux@zresa.it>"]
-license = "GPL3"
+description = "A flexible AT command parser for embedded systems and communication devices with no_std support"
+license = "GPL-3.0"
 readme = "README.md"
 repository = "https://github.com/HiHappyGarden/at-parser-rs.git"
+homepage = "https://github.com/HiHappyGarden/at-parser-rs"
+documentation = "https://docs.rs/at-parser-rs"
+keywords = ["at-commands", "parser", "embedded", "no-std", "communication"]
+categories = ["embedded", "no-std", "parser-implementations"]
 
 [lib]
 crate-type = ["rlib"]
